@@ -2,6 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QSqlDatabase>
+#include <QSql>
+#include <QSqlQuery>
+#include <QSqlError>
+#include <QSqlTableModel>
+#include <QDebug>
+
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +24,11 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QSqlDatabase db;
+    QSqlQuery query;
+
+    QSqlTableModel *borrowModel;
+
 };
 
 #endif // MAINWINDOW_H
