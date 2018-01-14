@@ -28,7 +28,6 @@ MainWindow::MainWindow(QWidget *parent) :
     borrowModel->setHeaderData(7, Qt::Horizontal, tr("Date In"));
     borrowModel->setHeaderData(8, Qt::Horizontal, tr("Description In"));
 
-
     ui->tableView->setModel(borrowModel);
     ui->tableView->setSortingEnabled(true);
     ui->tableView->hideColumn(0);
