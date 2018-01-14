@@ -129,7 +129,15 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QTableView" name="tableView"/>
+     <widget class="QTableView" name="tableView">
+      <property name="styleSheet">
+       <string notr="true">QTableView {
+	background-color: rgb(202, 255, 254);
+}
+QHeaderView::section { background-color: ghostwhite}
+</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
